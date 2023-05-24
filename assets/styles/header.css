@@ -1,0 +1,17 @@
+.searchLayout{
+
+}
+.heightLayout{
+    height: fit-content !important;
+}
+.textField{
+    border-radius: 16px !important;
+}
+.centeredCard{
+    align-self: center;
+}
+.headerLayout{
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
