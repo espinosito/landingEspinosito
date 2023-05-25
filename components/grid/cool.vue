@@ -1,10 +1,12 @@
 <template>
-  <div class="sixthCard">
+ <!--  <div class="sixthCard colorBack">
     <v-row justify="center" class="ma-0 pa-0" align="center">
-        <v-img src="img/cool.jpg" height="70vh" class="whats"></v-img>
-        <div class="cool fadeInUp">Cool stuff</div>
+        
+        <div class="cool fadeIn">Cool stuff</div>
     </v-row>
-  </div>
+  </div> -->
+  <v-card class="ma-0 pa-0 mt-3" width="100%" :style="'height: calc(60% - 12px);'">
+  </v-card>
 </template>
 
 <script>

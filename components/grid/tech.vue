@@ -1,14 +1,18 @@
 <template>
-  <div class="secondCard">
+  <!-- <div class="secondCard colorBack">
     <v-row justify="center" class="ma-0 pa-0" align="center">
-        <v-img src="img/code.jpg" height="60vh" class="whats"></v-img>
-        <div class="tech fadeInUp">Techs</div>
+        
+        <div class="tech fadeIn">Techs</div>
     </v-row>
-  </div>
+  </div> -->
+  <v-card class="ma-0 pa-0 my-3" width="100%" :style="'height: calc(100% - '+widthCard+'px - 24px);'">
+  </v-card>
 </template>
 
 <script>
-export default {};
+export default {
+  props:{widthCard:Number},
+};
 </script>
 
 <style></style>

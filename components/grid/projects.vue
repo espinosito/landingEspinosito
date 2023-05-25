@@ -1,10 +1,12 @@
 <template>
-  <div class="fouthCard">
+  <!-- <div class="fouthCard colorBack">
     <v-row justify="center" class="ma-0 pa-0" align="center">
-      <v-img src="img/team.jpg" height="60vh" class="whats"></v-img>
-      <div class="myProjects fadeInUp">My projects</div>
+      
+      <div class="myProjects fadeIn">My projects</div>
     </v-row>
-  </div>
+  </div> -->
+  <v-card class="ma-0 pa-0 mt-3" width="100%" :style="'height: calc(40% - 12px);'">
+  </v-card>
 </template>
 
 <script>

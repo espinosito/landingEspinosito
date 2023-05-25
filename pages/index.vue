@@ -1,6 +1,6 @@
 <template>
-  <v-row class="ma-0 pa-0">
-    <gridSistem/>
+  <v-row class="ma-0 pa-0 background" id="backGroundToggle">
+    <gridSistem />
   </v-row>
 </template>
 

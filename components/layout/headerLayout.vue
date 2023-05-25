@@ -34,8 +34,28 @@ export default {
     theme(){
       if (this.theme) {
         this.$vuetify.theme.isDark=true;
+
+        const backgroundImage = document.querySelectorAll('.background')
+        backgroundImage.forEach(element => {
+          element.classList.toggle('backgroundDark')
+        });
+
+        const cardColor = document.querySelectorAll('.colorBack')
+        cardColor.forEach(element => {
+          element.classList.toggle('colorD')
+        });
       }else{
         this.$vuetify.theme.isDark=false;
+        
+        const backgroundImage = document.querySelectorAll('.backgroundDark')
+        backgroundImage.forEach(element => {
+          element.classList.remove('backgroundDark')
+        });
+
+        const cardColor = document.querySelectorAll('.colorD')
+        cardColor.forEach(element => {
+          element.classList.remove('colorD')
+        });
       }
     }
   }

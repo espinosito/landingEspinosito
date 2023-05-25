@@ -1,10 +1,12 @@
 <template>
-  <div class="fifthCard">
+ <!--  <div class="fifthCard colorBack">
     <v-row justify="center" class="ma-0 pa-0 full" align="center">
-        <v-img src="img/gaming.jpeg" height="40vh" class="whats"></v-img>
-        <div class="hobbies fadeInUp">Hobbies</div>
+       
+        <div class="hobbies fadeIn">Hobbies</div>
     </v-row>
-  </div>
+  </div> -->
+  <v-card class="ma-0 pa-0 mb-3" width="100%" :style="'height: calc(40% - 12px);'">
+  </v-card>
 </template>
 
 <script>

@@ -1,10 +1,12 @@
 <template>
-  <div class="thirdCard" >
+  <!-- <div class="thirdCard colorBack">
     <v-row justify="center" class="ma-0 pa-0 full" align="center">
-        <v-img src="img/croc.jpeg" height="30vh" class="whats"></v-img>
-        <div class="aboutMe fadeInUp">About me</div>
+        
+        <div class="aboutMe fadeIn">About me</div>
     </v-row>
-  </div>
+  </div> -->
+  <v-card class="ma-0 pa-0 mb-3" width="100%" :style="'height: calc(60% - 12px);'">
+  </v-card>
 </template>
 
 <script>
