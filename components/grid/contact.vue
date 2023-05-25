@@ -10,7 +10,7 @@
     
     <div class="contact fadeIn" id="contact">Contact</div>
   </div> -->
-    <v-card class="ma-0 pa-0 perro firstCard colorBack" color="transparent" width="100%" :height="widthCard">
+    <v-card class="ma-0 pa-0 perro firstCard colorBack" width="100%" :height="widthCard">
         <v-carousel height="auto" cycle hide-delimiter-background hide-delimiters :show-arrows="false" interval="5000">
         <v-carousel-item v-for="item, index in images" :key="index" >
             <v-row class="pa-0 ma-0" align="center" justify="center">

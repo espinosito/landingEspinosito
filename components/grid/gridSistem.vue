@@ -1,16 +1,8 @@
 <template>
 <v-row class="ma-0 pa-0">
   <v-row class="ma-0 pa-0" v-if="$vuetify.breakpoint.width>738" justify="center">
-    <v-card class="ma-0 pa-0 px-4" max-width="1400px" width="100%" elevation="0" color="transparent">
+    <v-card class="ma-0 pa-0 px-4" max-width="1400px" width="100vw" elevation="0" color="transparent">
       <v-row class="ma-0 pa-0"  justify="center" style="height:100vh" v-for="item, index in 2" :key="index">
-          <!-- <contact/>
-          <tech/>
-          <about-me/>
-
-            <projects/>
-
-          <hobbies/>
-          <cool/> -->
           <v-col cols="2" class="ma-0 pa-0">
             <contact :widthCard="widthCard"/>
             <tech :widthCard="widthCard"/>

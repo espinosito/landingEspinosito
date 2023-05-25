@@ -7,7 +7,7 @@
 }
 .backgroundDark{
     background-size:cover;
-    background-image: url('backgrounds/waveDown.svg');
+    background-image: url('backgrounds/darkMount.svg');
     background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -15,7 +15,7 @@
 
 .colorBack{
 /* From https://css.glass */
-background: rgba(255, 255, 255, 0.288);
+background: rgba(255, 255, 255, 0.288) !important;
 border-radius: 16px !important;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
 backdrop-filter: blur(10.3px);

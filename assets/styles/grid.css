@@ -1,6 +1,9 @@
 .full{
     height: 100% !important;
 }
+.fullWidth{
+    width: 100% !important;
+}
 body::-webkit-scrollbar{
     display: none;
 }
@@ -38,10 +41,13 @@ body::-webkit-scrollbar{
 
 .tech{
     position: relative;
-    top: -10vh;
+    top: -0vh;
     left: 0;
-    font-size: 60px;
+    font-size: 50px;
     display: none;
+}
+.graph{
+    transform: rotate(-90deg);
 }
 .secondCard:hover .tech{
     color: rgb(255, 255, 255);
