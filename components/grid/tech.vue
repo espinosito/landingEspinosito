@@ -1,34 +1,16 @@
 <template>
-  <!-- <div class="colorBack">
-    <v-row justify="center" class="ma-0 pa-0" align="center">
-        
-        <div class="tech fadeIn">Techs</div>
-    </v-row>
-  </div> -->
   <v-card class="ma-0 pa-0 my-3 secondCard colorBack" width="100%" :style="'height: calc(100% - '+widthCard+'px - 24px);'">
-    <v-row class="ma-0 pa-0 full" justify="center" align="center">
-      <!-- <div class="tech fadeIn">Techs</div> -->
-      <v-sparkline
-      id="sapo"
-      class="graph"
-      :value="value"
-      :gradient="gradient"
-      :smooth="radius || false"
-      :padding="padding"
-      :line-width="width"
-      :stroke-linecap="lineCap"
-      :gradient-direction="gradientDirection"
-      :fill="fill"
-      :type="type"
-      :auto-line-width="autoLineWidth"
-      auto-draw
-    ></v-sparkline>
-    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
-      <path id="curve" fill="none" stroke="#000" stroke-width="2"/>
-    </svg> -->
-
-
-
+    <v-row class="ma-0 pa-0 full fullWidth" justify="center" align="center">
+      <div class="tech fadeIn">Tech</div>
+      <svg xmlns="http://www.w3.org/2000/svg" class="mama" width="90%" height="80%" viewBox="0 0 200 810">
+        <path id="curve" fill="none" stroke="#fff" stroke-width="18" stroke-linecap="round" d="M 10 20 
+          C 280 120, 150 200, 100 250 
+          C 40 300, 120 350, 130 400 
+          C 140 450, 10 500, 100 600 
+          C 200 700, 180 750, 190 800" />
+        <path id="lineSm" fill="none" stroke="#fff" stroke-width="18" stroke-linecap="round" d="M 10 800 L 190 800" />
+        <path id="line" fill="none" stroke="#fff" stroke-width="18" stroke-linecap="round" d="M 190 10 L 190 800" />
+      </svg>
     </v-row>
   </v-card>
 </template>

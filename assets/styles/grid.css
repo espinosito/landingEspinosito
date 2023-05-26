@@ -40,33 +40,54 @@ body::-webkit-scrollbar{
 
 
 .tech{
-    position: relative;
-    top: -0vh;
-    left: 0;
-    font-size: 50px;
+    position:relative;
+    top: 0vh;
+    font-size: 40px;
     display: none;
 }
-
-.curve-animation {
-    animation: drawCurve 3s linear forwards;
+#curve, #line, #lineSm {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    animation-fill-mode: forwards;
+  }
+  
+  #curve {
+    animation: drawCurve 3s linear  forwards!important;
+  }
+  #line {
+    animation: drawLine 3s linear forwards;
+  }
+  #lineSm {
+    animation: drawLineSm 13s linear forwards !important;
   }
   
   @keyframes drawCurve {
     0% {
-      d: path("M 200 50");
-    }
-    50% {
-      d: path("M 200 50 Q 300 150, 200 250 T 200 350");
+      stroke-dashoffset: 2000;
     }
     100% {
-      d: path("M 200 50 Q 100 150, 200 250 T 200 350");
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @keyframes drawLine {
+    0% {
+      stroke-dashoffset: 2000;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes drawLineSm {
+    0% {
+      stroke-dashoffset: 2000;
+    }
+    100% {
+      stroke-dashoffset: 0;
     }
   }
   
   
-.graph{
-    transform: rotate(-90deg);
-}
 .secondCard:hover .tech{
     color: rgb(255, 255, 255);
     display: block;
@@ -74,9 +95,9 @@ body::-webkit-scrollbar{
 
 .aboutMe{
     position: relative;
-    top: -10vh;
-    left: 0;
-    font-size: 60px;
+    top: -4vh;
+    padding-left: 20px;
+    font-size: 30px;
     display: none;
 }
 .thirdCard:hover .aboutMe{
@@ -86,7 +107,7 @@ body::-webkit-scrollbar{
 
 .myProjects{
     position: relative;
-    top: -10vh;
+    top: 0vh;
     left: 0;
     font-size: 60px;
     display: none;

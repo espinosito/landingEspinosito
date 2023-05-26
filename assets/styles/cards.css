@@ -1,9 +1,14 @@
 .firstCard:hover .smallImg{
-    /* -webkit-animation-fill-mode: forwards;
-    animation-name: example;
-    animation-duration: 1s; */
     transform: scale(.6);
 }
 .noBackgroundArow, .v-window__prev, .v-window__next {
         background: rgba(0, 0, 0, 0) !important;
+}
+.mama{
+    transition: .2s;
+}
+.secondCard:hover .mama{
+    transform: scale(.8);
+    position: relative;
+    top: -5vh;
 }
