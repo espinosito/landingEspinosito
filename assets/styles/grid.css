@@ -46,6 +46,24 @@ body::-webkit-scrollbar{
     font-size: 50px;
     display: none;
 }
+
+.curve-animation {
+    animation: drawCurve 3s linear forwards;
+  }
+  
+  @keyframes drawCurve {
+    0% {
+      d: path("M 200 50");
+    }
+    50% {
+      d: path("M 200 50 Q 300 150, 200 250 T 200 350");
+    }
+    100% {
+      d: path("M 200 50 Q 100 150, 200 250 T 200 350");
+    }
+  }
+  
+  
 .graph{
     transform: rotate(-90deg);
 }

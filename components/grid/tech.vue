@@ -23,6 +23,12 @@
       :auto-line-width="autoLineWidth"
       auto-draw
     ></v-sparkline>
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+      <path id="curve" fill="none" stroke="#000" stroke-width="2"/>
+    </svg> -->
+
+
+
     </v-row>
   </v-card>
 </template>
@@ -51,11 +57,24 @@ export default {
       type: 'trend',
       autoLineWidth: false,
     }),
-    mounted(){
-      const sapo = document.getElementById('sapo').scrollWidth
+    /* mounted() {
+    // Obtén el elemento path del SVG
+    const path = document.getElementById('curve');
 
-      console.log(sapo);
-    }
+    // Obtiene la longitud total de la curva
+    const length = path.getTotalLength();
+
+    // Establece la longitud inicial del trazo en 0
+    path.style.strokeDasharray = length;
+
+    // Anima la longitud del trazo para que aparezca gradualmente
+    path.style.strokeDashoffset = length;
+
+    // Para iniciar la animación, espera un corto tiempo y luego aplica la clase para activarla
+    setTimeout(() => {
+      path.classList.add('curve-animation');
+    }, 100);
+  } */
 };
 </script>
 
