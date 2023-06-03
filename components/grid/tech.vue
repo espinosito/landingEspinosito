@@ -2,7 +2,7 @@
   <v-card class="ma-0 pa-0 my-3 secondCard colorBack" width="100%" :style="'height: calc(100% - '+widthCard+'px - 24px);'">
     <v-row class="ma-0 pa-0 full fullWidth" justify="center" align="center">
       <div class="tech fadeIn">Tech</div>
-      <svg xmlns="http://www.w3.org/2000/svg" class="mama" width="90%" height="80%" viewBox="0 0 200 810">
+      <svg xmlns="http://www.w3.org/2000/svg" class="secondCard" width="90%" height="80%" viewBox="0 0 200 810">
         <path id="curve" fill="none" stroke="#fff" stroke-width="18" stroke-linecap="round" d="M 10 20 
           C 280 120, 150 200, 100 250 
           C 40 300, 120 350, 130 400 

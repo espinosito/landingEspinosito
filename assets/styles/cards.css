@@ -4,11 +4,20 @@
 .noBackgroundArow, .v-window__prev, .v-window__next {
         background: rgba(0, 0, 0, 0) !important;
 }
-.mama{
+.secondCard{
     transition: .2s;
 }
-.secondCard:hover .mama{
+.secondCard:hover .secondCard{
     transform: scale(.8);
     position: relative;
     top: -5vh;
+}
+.divider{
+    max-width: 95% !important;
+    border-color:rgba(255, 255, 255, 0.393) !important ;
+}
+.cardMail{
+    border-radius: 16px !important;
+    background-color: black !important;
+    overflow: scroll;
 }

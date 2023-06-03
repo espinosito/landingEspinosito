@@ -74,6 +74,7 @@ export default {
         requestAnimationFrame(raf);
     }
     requestAnimationFrame(raf);
+    /* esto da problemas con el scroll en la card de correos */
   }
 }
 </script>
