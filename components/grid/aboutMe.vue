@@ -27,25 +27,26 @@
         </v-carousel>
       </v-card>
       <v-card elevation="0" class="ma-0 pa-0 cardMail" width="80%" height="40%">
-        <v-row class="ma-0 pa-0 pa-4 pb-2" justify="center" align="center">
+        <v-row class="ma-0 pa-0 pa-3 pb-2 cardMail statHeader" justify="center" align="center">
             <v-row class="ma-0 pa-0" justify="start" align="center">
               <v-img class="mr-2" contain height="30px" max-width="30px" src="icons/mail.svg"></v-img>
               Todos
             </v-row>
             <v-row class="ma-0 pa-0" justify="end" align="center">
-            2
+            {{mailTotal}}
             </v-row>
         </v-row>
             <v-row class="ma-0 pa-0" justify="center">
               <v-divider class="divider"></v-divider>
             </v-row>
-        <v-row class="ma-0 pa-0 px-4 py-2" justify="center" align="center">
+        <v-row class="ma-0 pa-0 px-4 py-2" @click="$store.state.dialogCv=true" v-if="first==true" justify="center" align="center">
             <v-row class="ma-0 pa-0 fullWidth" justify="center" align="center">
               <v-row class="ma-0 pa-0" justify="start" align="center">
+                <span class="dot mr-2"></span>
                 viva dios primer correo
               </v-row>
               <v-row class="ma-0 pa-0" justify="end" align="center">
-                12:04
+                {{time}}
               </v-row>
             </v-row>
             <v-row class="ma-0 pa-0" style="width: -webkit-fill-available;" justify="start" align="center">
@@ -55,15 +56,16 @@
             </v-row>
         </v-row>
               <v-row class="ma-0 pa-0" justify="center">
-                <v-divider class="divider"></v-divider>
+                <v-divider v-if="second==true" class="divider"></v-divider>
               </v-row>
-        <v-row class="ma-0 pa-0 px-4 py-2" justify="center" align="center">
+        <v-row class="ma-0 pa-0 px-4 py-2" v-if="second==true" justify="center" align="center">
             <v-row class="ma-0 pa-0 fullWidth" justify="center" align="center">
               <v-row class="ma-0 pa-0" justify="start" align="center">
-                viva dios primer correo
+                <span class="dot mr-2"></span>
+                viva dios segundo correo
               </v-row>
               <v-row class="ma-0 pa-0" justify="end" align="center">
-                12:04
+                {{time}}
               </v-row>
             </v-row>
             <v-row class="ma-0 pa-0" style="width: -webkit-fill-available;" justify="start" align="center">
@@ -73,15 +75,16 @@
             </v-row>
         </v-row>
         <v-row class="ma-0 pa-0" justify="center">
-                <v-divider class="divider"></v-divider>
+                <v-divider v-if="thirth==true" class="divider"></v-divider>
               </v-row>
-        <v-row class="ma-0 pa-0 px-4 py-2" justify="center" align="center">
+        <v-row class="ma-0 pa-0 px-4 py-2" v-if="thirth==true" justify="center" align="center">
             <v-row class="ma-0 pa-0 fullWidth" justify="center" align="center">
               <v-row class="ma-0 pa-0" justify="start" align="center">
-                viva dios primer correo
+                <span class="dot mr-2"></span>
+                viva dios tercer correo
               </v-row>
               <v-row class="ma-0 pa-0" justify="end" align="center">
-                12:04
+                {{time}}
               </v-row>
             </v-row>
             <v-row class="ma-0 pa-0" style="width: -webkit-fill-available;" justify="start" align="center">
@@ -100,7 +103,20 @@ export default {
   data(){
     return{
       model: 0,
+      time:'',
+      first:false,
+      second:false,
+      thirth:false,
+      mailTotal:0,
     }
+  },
+  created(){
+    const date = new Date;
+    this.time=date.getHours() + ':'+date.getMinutes();
+    console.log(this.time);
+    setTimeout(()=>{this.first=true, this.mailTotal++},3000);
+    setTimeout(()=>{this.second=true, this.mailTotal++},6000);
+    setTimeout(()=>{this.thirth=true, this.mailTotal++},10000);
   },
   methods:{
     

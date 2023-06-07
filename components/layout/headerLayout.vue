@@ -44,6 +44,12 @@ export default {
         cardColor.forEach(element => {
           element.classList.toggle('colorD')
         });
+
+        const mailColor = document.querySelectorAll('.cardMail')
+        mailColor.forEach(element => {
+          element.classList.toggle('cardMailDark')
+        });
+        
       }else{
         this.$vuetify.theme.isDark=false;
         
@@ -55,6 +61,11 @@ export default {
         const cardColor = document.querySelectorAll('.colorD')
         cardColor.forEach(element => {
           element.classList.remove('colorD')
+        });
+        
+        const mailColor = document.querySelectorAll('.cardMailDark')
+        mailColor.forEach(element => {
+          element.classList.remove('cardMailDark')
         });
       }
     }

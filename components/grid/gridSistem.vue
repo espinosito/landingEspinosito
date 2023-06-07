@@ -1,8 +1,8 @@
 <template>
-<v-row class="ma-0 pa-0" >
-  <v-row class="ma-0 pa-0" v-if="$vuetify.breakpoint.width>738" justify="center">
+<v-row class="ma-0 pa-0">
+  <v-row class="ma-0 pa-0" v-if="$vuetify.breakpoint.width>738" justify="center" align="center">
     <v-card class="ma-0 pa-0 px-4" max-width="1400px" width="100vw" elevation="0" color="transparent">
-      <v-row class="ma-0 pa-0"  justify="center" style="height:100vh;" v-for="item, index in 3" :key="index">
+      <v-row class="ma-0 pa-0 py-4"  justify="center" align="center" style="height:100vh;"> <!-- v-for="item, index in 3" :key="index" -->
           <v-col style="height:100%;" cols="2" class="ma-0 pa-0" >
             <contact :widthCard="widthCard"/>
             <tech :widthCard="widthCard"/>
@@ -57,7 +57,7 @@ export default {
     setTimeout(()=>{this.widthHandler()
     window.addEventListener('resize', this.widthHandler)},1)
 
-    const lenis = new Lenis({
+    /* const lenis = new Lenis({
     smoothWheel: true,
     infinite: true,
     duration: 1.2,
@@ -73,7 +73,7 @@ export default {
         lenis.raf(time);
         requestAnimationFrame(raf);
     }
-    requestAnimationFrame(raf);
+    requestAnimationFrame(raf); */
     /* esto da problemas con el scroll en la card de correos */
   }
 }

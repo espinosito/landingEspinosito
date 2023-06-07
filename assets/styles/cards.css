@@ -14,10 +14,36 @@
 }
 .divider{
     max-width: 95% !important;
-    border-color:rgba(255, 255, 255, 0.393) !important ;
+    border-color:rgba(78, 78, 78, 0.393) !important;
+}
+.dividerDark{
+    max-width: 95% !important;
+    border-color:rgba(78, 78, 78, 0.393) !important ;
 }
 .cardMail{
     border-radius: 16px !important;
-    background-color: black !important;
+    background-color: rgb(255, 255, 255) ;
     overflow: scroll;
+}
+.cardMailDark{
+    border-radius: 16px !important;
+    background-color: #1E1E1E !important;
+    overflow: scroll;
+}
+.cardMail::-webkit-scrollbar{
+    display: none;
+}
+.cardMailDark::-webkit-scrollbar{
+    display: none;
+}
+.dot {
+    height: 8px;
+    width: 8px;
+    background-color: #0033ff;
+    border-radius: 50%;
+    display: inline-block;
+}
+.statHeader{
+    position: sticky !important;
+    top: 0;
 }
