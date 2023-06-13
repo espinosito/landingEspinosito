@@ -6,7 +6,7 @@
     </v-row>
   </div> -->
   <v-card class="ma-0 pa-0 mb-3 fifthCard colorBack" width="100%" :style="'height: calc(40% - 12px);'">
-    <div class="hobbies fadeIn">Hobbies</div>
+    perro
   </v-card>
 </template>
 

@@ -25,6 +25,19 @@
     background-color: rgb(255, 255, 255) ;
     overflow: scroll;
 }
+.cardNotes{
+    border-radius: 16px !important;
+    background-color: rgb(255, 255, 255) ;
+    overflow: scroll;
+}
+.cardNotesHeader{
+    border-radius: 16px 16px 0 0 !important;
+    background-color: rgb(243, 223, 12) ;
+    overflow: scroll;
+}
+.notasText{
+    color: white;
+}
 .cardMailDark{
     border-radius: 16px !important;
     background-color: #1E1E1E !important;
