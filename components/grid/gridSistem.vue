@@ -50,7 +50,6 @@ export default {
       this.width=window.innerWidth
       this.widthCard=document.querySelectorAll('.perro')[0].scrollWidth;
       this.final = 'calc(100% -'+this.widthCard+'px);'
-      console.log(this.final);
     },
     },
   mounted(){
@@ -77,4 +76,94 @@ export default {
     /* esto da problemas con el scroll en la card de correos */
   }
 }
+/* created(){
+    const arr=[12,-30,4,67,3,1,23,6,8,7,56, 0,1,100];
+    const arr2=[2,4,1,0,6,3,5,7]
+    const pali=12321
+    const duplex=[1,2,1,3,3,1,7,1,2,4,5];
+    const falsy=[2,null, false, 0, 3,[]];
+    function falsyFilter(arr){
+      let res=arr.filter(item => item===0 || item &&!(Array.isArray(item) && item.length===0))
+      return res;
+    }
+
+    console.log(falsyFilter(falsy));
+  //   /* function deleteDuplex(arr){
+  //     let newArr=[]
+  //     for(let i=0; i<arr.length;i++){
+  //       for(let j=i; j<arr.length;j++){
+  //         if(arr[i]==arr[j+1]){
+  //           arr.splice(j+1,1)
+  //         }
+  //       }
+  //     }
+  //     return arr
+  //   }
+
+  //   console.log(deleteDuplex(duplex)); */
+  //   /* function palindromo(arr){
+  //     if(typeof arr == 'string'){
+  //       arr = arr.toLowerCase();
+  //       console.log(arr);
+  //     }
+  //     if(typeof arr == 'number'){
+  //       arr=arr.toString()
+  //       console.log(arr);
+  //     }
+  //     let aux=true
+  //     for(let i=0; i<arr.length;i++){
+  //       if (arr[i]!=arr[arr.length-1-i]) {
+  //         aux=false
+  //       }
+  //     }
+  //     return aux
+  //   }
+  //   console.log(palindromo(pali)) */
+  //   // const auxSum=[];
+  //   // function sumPar(arr){
+  //   //   for(let i=0; i<arr.length; i++){
+  //   //     if(arr[i]%2===0){
+  //   //       auxSum.push(arr[i])
+  //   //     }
+  //   //   }
+  //   //   /* let res = auxSum.reduce((a,b)=>{a+b},0) */
+  //   //   console.log(auxSum);
+  //   //   function recursive(arr,res,iter){
+  //   //       if (iter<arr.length) {
+  //   //         res=res + arr[iter];
+  //   //         iter+=1
+  //   //         return recursive(arr,res,iter)
+  //   //       }else{
+  //   //         return res;
+  //   //       }
+  //   //   }
+  //   //   const final=recursive(auxSum,0,0)
+  //   //   return final;
+  //   // }
+  //   // console.log(sumPar(arr2));
+
+  //   // function calcMaxPlusMin(arr){
+  //   //   let ordered = arr.sort((a,b)=>{ return a-b});
+  //   //   let max = ordered[ordered.length-1]
+  //   //   let min = ordered[0]
+  //   //   let result=max+min;
+  //   //   return(result);
+  //   // }
+  //   // console.log(calcMaxPlusMin(arr));
+
+  //   // /* sortp por comparacion */
+  //   // function sortComp(arr){
+  //   //   for (let i=0; i<arr.length;i++){
+  //   //     for (let j=0; j<arr.length -i -1;j++){
+  //   //       if(arr[j]>arr[j+1]){
+  //   //         let temp = arr[j+1]
+  //   //         arr[j+1]=arr[j]
+  //   //         arr[j]=temp
+  //   //       }
+  //   //     }
+  //   //   }
+  //   //   return arr;
+  //   // }
+  //   // console.log(sortComp(arr))
+  // }, */
 </script>

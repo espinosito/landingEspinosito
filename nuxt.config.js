@@ -29,6 +29,7 @@ export default {
     'assets/styles/grid.css',
     'assets/styles/icons.css',
     'assets/styles/cards.css',
+    'assets/styles/map.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

@@ -6,12 +6,15 @@
     </v-row>
   </div> -->
   <v-card class="ma-0 pa-0 mb-3 fifthCard colorBack" width="100%" :style="'height: calc(40% - 12px);'">
-    perro
+    <general-map/>
   </v-card>
 </template>
 
 <script>
-export default {};
+import generalMap from '../maps/generalMap.vue';
+export default {
+  components: { generalMap },
+}
 </script>
 
 <style></style>
